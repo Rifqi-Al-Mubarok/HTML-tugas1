@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+    <style>
+        
+      #table-basic {
+        width: 60%;
+        border-collapse: collapse;
+      }
+      #table-basic td {
+        padding: 6px;
+        font-size: 16px;
+      }
+      #table-basic .bg-blue {
+        background-color: darkblue;
+        color: white;
+      }
+    
+    </style>
+</head>
+<body>
+    <h1>
+        HTML 5 TABLE
+    </h1>
+    <hr />
+    <h3>
+        Table Dasar
+    </h3>
+    <table border="10" style="width: 60%;" id="table-basic">   
+        <!-- <tr> : untuk membuat baris -->
+        <!-- <td> : untuk membuat data/kolom -->
+        <!-- border="" : lapisan kotak paling luar -->
+        <!-- style="width: ___% : agar jika layar di di kecilin, ikut mengecil" -->
+        <tr>
+            <td>No</td>
+            <td>Nama</td>
+            <td>Asal</td>
+            <td>Status</td>
+        </tr>
+        <!-- shortcut: tr>td*3 -->
+        <tr>
+            <td>1.</td>
+            <td>Fulan</td>
+            <td>Jakarta</td>
+            <td>Jomblo</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Fulanah</td>
+            <td>Bekasi</td>
+            <td>Anak 4</td>
+        </tr>
+    </table>
+
+    <h3>Table Standar HTML5</h3>
+    <!-- shortcut: table>thead+tbody+tfont -->
+    <!-- <th> : untuk membuat data/kolom di thead -->
+    <table border="5" style="width: 30%;">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Nama Barang</th>
+                <th>Harga Barang</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>23/09/25</td>
+                <td>Es Teh Desa Ori</td>
+                <td>2.500,-</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>25/09/25</td>
+                <td rowspan="2">Pisang Kembung</td>
+                <!-- rowspan: mengubah baris ke bawah -->
+                <td>5.000,-</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>25/09/25</td>
+                <!-- <td>Pisang Kembung</td> -->
+                <td>5.000,-</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- <td></td>
+                <td></td> -->
+                <!-- colspan: menggabungkan kolom -->
+                <td colspan="3">
+                    <b>
+                        Total pengeluaran
+                    </b>
+                </td>
+                <td>
+                    <b>12.500,-</b>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

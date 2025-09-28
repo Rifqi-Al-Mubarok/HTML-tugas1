@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif; /* Ganti font default jadi Arial */
+  background: #f9fafb;            /* Warna latar belakang abu-abu muda */
+  margin: 0;                      /* Hilangkan jarak default di luar halaman */
+  padding: 20px;                  /* Tambahkan ruang dalam body */
+  color: #333;                    /* Warna teks utama abu tua */
+}
+
+.container {
+  max-width: 800px;               /* Lebar maksimal kontainer 800px */
+  margin: auto;                   /* Biar kontainer otomatis di tengah */
+  background: #f9fafb;            /* Warna latar belakang kontainer */
+  padding: 30px;                  /* Ruang dalam kontainer */
+  border-radius: 12px;            /* Sudut kontainer agak membulat */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Bayangan tipis di sekeliling kontainer */
+}
+
+h1 {
+  text-align: center;             /* Judul rata tengah */
+  color: #1e3a8a;                 /* Warna teks biru tua */
+  margin-bottom: 5px;             /* Jarak bawah kecil */
+}
+
+.subtitle {
+  text-align: center;             /* Subjudul rata tengah */
+  color: #6b7280;                 /* Warna abu-abu */
+  margin-bottom: 30px;            /* Jarak bawah lebih besar */
+}
+
+.logo {
+  display: block;                 /* Ubah gambar jadi block element */
+  margin: 0 auto 10px auto;       /* Posisi logo di tengah + jarak bawah */
+  width: 60px;                    /* Atur lebar logo */
+}
+
+.card {
+  background: #ffffff;            /* Warna latar belakang putih */
+  padding: 20px;                  /* Ruang dalam card */
+  border-radius: 10px;            /* Sudut card agak membulat */
+  margin-bottom: 40px;            /* Jarak antar card */
+}
+
+.card h3 {
+  margin-top: 0;                  /* Hilangkan jarak atas judul card */
+  color: #1d4ed8;                 /* Warna judul card biru */
+}
+
+.section-title {
+  padding-left: 10px;             /* Tambah jarak kiri supaya teks tidak mepet */
+  border-left: 4px solid #22c55e; /* Tambah garis hijau di kiri judul */
+}
+
+.card ul, .card ol {
+  padding-left: 20px;             /* Tambah jarak kiri list (ul/ol) dalam card */
+}
+
+.l {
+  width: 220px;                   /* Lebar gambar */
+  height: 220px;                  /* Tinggi gambar, sama dengan lebar biar bulat */
+  object-fit: cover;              /* Isi area tanpa distorsi */
+  border-radius: 50%;             /* Bikin gambar jadi lingkaran */
+  border: 3px solid #e5e7eb;      /* Tambahkan garis abu-abu tipis */
+}
+
+.logo {
+  display: block;                 /* Bikin logo block element */
+  margin-left: auto;              /* Posisi logo ke tengah */
+  margin-right: auto;             /* Posisi logo ke tengah */
+  width: 60px;                    /* Ukuran logo */
+  border-radius: 30%;             /* Bikin agak membulat */
+}
+
+.center {
+  text-align: center;             /* Bikin konten rata tengah */
+  margin-top: 20px;               /* Jarak atas 20px */
+}
+
+a {
+  color: #1e40af;                 /* Warna link biru tua */
+  text-decoration: none;          /* Hilangkan garis bawah default */
+}
+
+a:hover {
+  text-decoration: underline;     /* Saat di-hover, link bergaris bawah */
+}
+
+img {
+  border-radius: 300px;           /* Membulatkan semua gambar, makin besar nilai makin bulat */
+}
