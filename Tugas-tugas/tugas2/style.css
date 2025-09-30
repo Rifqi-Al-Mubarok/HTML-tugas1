@@ -1,89 +1,102 @@
 body {
-  font-family: Arial, sans-serif; /* Ganti font default jadi Arial */
-  background: #f9fafb;            /* Warna latar belakang abu-abu muda */
-  margin: 0;                      /* Hilangkan jarak default di luar halaman */
-  padding: 20px;                  /* Tambahkan ruang dalam body */
-  color: #333;                    /* Warna teks utama abu tua */
+  font-family: Arial, sans-serif; /* Mengatur jenis huruf utama halaman menjadi Arial.
+                                     Jika Arial tidak tersedia, browser akan pakai font "sans-serif". 
+                                     Tujuannya agar teks lebih bersih dan mudah dibaca. */
+  background: #f9fafb;            /* Memberi warna latar belakang halaman dengan abu-abu sangat muda (#f9fafb). 
+                                     Warna ini membuat tampilan lebih lembut dibanding putih polos. */
+  margin: 0;                      /* Menghapus jarak default bawaan browser di tepi halaman. */
+  padding: 20px;                  /* Memberi ruang kosong (spasi) di dalam body, supaya isi halaman tidak mepet tepi layar. */
+  color: #333;                    /* Mengatur warna teks utama menjadi abu-abu gelap (#333), 
+                                     lebih nyaman dibaca daripada hitam pekat. */
 }
 
 .container {
-  max-width: 800px;               /* Lebar maksimal kontainer 800px */
-  margin: auto;                   /* Biar kontainer otomatis di tengah */
-  background: #f9fafb;            /* Warna latar belakang kontainer */
-  padding: 30px;                  /* Ruang dalam kontainer */
-  border-radius: 12px;            /* Sudut kontainer agak membulat */
-  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Bayangan tipis di sekeliling kontainer */
+  max-width: 800px;               /* Membatasi lebar maksimal kontainer menjadi 800px agar konten tidak terlalu melebar. */
+  margin: auto;                   /* Membuat posisi kontainer berada di tengah halaman secara otomatis (kiri dan kanan seimbang). */
+  background: #f9fafb;            /* Warna latar belakang kontainer sama seperti body (#f9fafb) supaya konsisten. */
+  padding: 30px;                  /* Menambahkan ruang kosong di dalam kontainer agar isi tidak menempel ke tepi. */
+  border-radius: 12px;            /* Membuat sudut kontainer agak tumpul (rounded corner) supaya lebih modern. */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Memberi efek bayangan tipis di sekitar kontainer 
+                                           agar terlihat "terangkat" dari background. */
+
+  display: flex;                  /* Menggunakan Flexbox untuk mengatur isi kontainer. */
+  flex-direction: column;         /* Susunan elemen diatur vertikal (ke bawah). */
+  align-items: center;            /* Semua isi kontainer diposisikan rata tengah. */
 }
 
 h1 {
-  text-align: center;             /* Judul rata tengah */
-  color: #1e3a8a;                 /* Warna teks biru tua */
-  margin-bottom: 5px;             /* Jarak bawah kecil */
+  text-align: center;             /* Judul utama diletakkan di tengah halaman. */
+  color: #1e3a8a;                 /* Warna teks judul biru gelap (#1e3a8a) agar lebih menonjol. */
+  margin-bottom: 5px;             /* Memberi sedikit jarak ke bawah agar tidak terlalu rapat dengan elemen berikutnya. */
 }
 
 .subtitle {
-  text-align: center;             /* Subjudul rata tengah */
-  color: #6b7280;                 /* Warna abu-abu */
-  margin-bottom: 30px;            /* Jarak bawah lebih besar */
+  text-align: center;             /* Subjudul diletakkan di tengah, sama seperti judul. */
+  color: #6b7280;                 /* Warna abu-abu medium (#6b7280), memberi kesan lembut dan tidak terlalu mencolok. */
+  margin-bottom: 30px;            /* Memberi jarak bawah lebih besar agar terpisah dengan konten selanjutnya. */
 }
 
 .logo {
-  display: block;                 /* Ubah gambar jadi block element */
-  margin: 0 auto 10px auto;       /* Posisi logo di tengah + jarak bawah */
-  width: 60px;                    /* Atur lebar logo */
+  display: block;                 /* Membuat gambar logo dianggap sebagai elemen block agar mudah diatur posisinya. */
+  margin: 0 auto 10px auto;       /* Posisi logo otomatis berada di tengah, dengan tambahan jarak 10px di bawahnya. */
+  width: 60px;                    /* Mengatur lebar logo menjadi 60px (tinggi menyesuaikan proporsi asli). */
 }
 
 .card {
-  background: #ffffff;            /* Warna latar belakang putih */
-  padding: 20px;                  /* Ruang dalam card */
-  border-radius: 10px;            /* Sudut card agak membulat */
-  margin-bottom: 40px;            /* Jarak antar card */
+  background: #ffffff;            /* Latar belakang setiap card dibuat putih agar kontras dengan background abu-abu body. */
+  padding: 20px;                  /* Memberi ruang dalam card supaya konten tidak menempel ke tepi card. */
+  border-radius: 10px;            /* Membulatkan sudut card dengan radius 10px agar lebih halus. */
+  margin-bottom: 40px;            /* Memberi jarak antar card sehingga tidak menempel satu sama lain. */
+  width: 90%;                     /* Lebar card dibuat fleksibel (90% dari container). */
+  max-width: 600px;               /* Batas maksimal lebar card supaya tetap rapi di layar besar. */
 }
 
 .card h3 {
-  margin-top: 0;                  /* Hilangkan jarak atas judul card */
-  color: #1d4ed8;                 /* Warna judul card biru */
+  margin-top: 10px;               /* Jarak atas judul card sedikit saja agar lebih rapat. */
+  color: #1d4ed8;                 /* Memberi warna biru (#1d4ed8) pada judul card agar menonjol. */
 }
 
 .section-title {
-  padding-left: 10px;             /* Tambah jarak kiri supaya teks tidak mepet */
-  border-left: 4px solid #22c55e; /* Tambah garis hijau di kiri judul */
+  padding-left: 10px;             /* Memberi jarak pada teks di sebelah kiri supaya tidak mepet dengan garis. */
+  border-left: 4px solid #22c55e; /* Membuat garis vertikal hijau (4px) di sisi kiri judul, sebagai penanda bagian. */
 }
 
 .card ul, .card ol {
-  padding-left: 20px;             /* Tambah jarak kiri list (ul/ol) dalam card */
+  padding-left: 20px;             /* Memberi indentasi (spasi ke kanan) pada daftar (ul/ol) di dalam card. */
 }
 
 .l {
-  width: 220px;                   /* Lebar gambar */
-  height: 220px;                  /* Tinggi gambar, sama dengan lebar biar bulat */
-  object-fit: cover;              /* Isi area tanpa distorsi */
-  border-radius: 50%;             /* Bikin gambar jadi lingkaran */
-  border: 3px solid #e5e7eb;      /* Tambahkan garis abu-abu tipis */
+  width: 220px;                   /* Lebar gambar dibuat 220px. */
+  height: 220px;                  /* Tinggi gambar dibuat sama (220px) agar berbentuk persegi. */
+  object-fit: cover;              /* Gambar diatur agar memenuhi kotak tanpa merusak rasio, 
+                                     jadi tidak gepeng walaupun ukurannya dipaksa. */
+  border-radius: 50%;             /* Membuat gambar berbentuk lingkaran sempurna. */
+  border: 3px solid #e5e7eb;      /* Memberikan garis tepi abu-abu muda (3px) pada gambar. */
 }
 
 .logo {
-  display: block;                 /* Bikin logo block element */
-  margin-left: auto;              /* Posisi logo ke tengah */
-  margin-right: auto;             /* Posisi logo ke tengah */
-  width: 60px;                    /* Ukuran logo */
-  border-radius: 30%;             /* Bikin agak membulat */
+  display: block;                 /* Sama seperti di atas, membuat logo block agar bisa diatur margin. */
+  margin-left: auto;              /* Otomatis membuat logo sejajar tengah ke kiri. */
+  margin-right: auto;             /* Otomatis membuat logo sejajar tengah ke kanan. */
+  width: 60px;                    /* Ukuran logo tetap 60px. */
+  border-radius: 30%;             /* Membuat logo agak membulat di sudutnya (bukan lingkaran penuh). */
 }
 
 .center {
-  text-align: center;             /* Bikin konten rata tengah */
-  margin-top: 20px;               /* Jarak atas 20px */
+  text-align: center;             /* Mengatur agar semua teks/elemen di dalam class center rata tengah. */
+  margin-top: 20px;               /* Memberikan jarak atas 20px agar ada pemisah dengan elemen sebelumnya. */
 }
 
 a {
-  color: #1e40af;                 /* Warna link biru tua */
-  text-decoration: none;          /* Hilangkan garis bawah default */
+  color: #1e40af;                 /* Warna link biru gelap (#1e40af) agar jelas terlihat tapi tetap enak dilihat. */
+  text-decoration: none;          /* Menghapus garis bawah default pada link agar lebih rapi. */
 }
 
 a:hover {
-  text-decoration: underline;     /* Saat di-hover, link bergaris bawah */
+  text-decoration: underline;     /* Saat kursor diarahkan ke link, tampil garis bawah → memberi efek interaktif. */
 }
 
 img {
-  border-radius: 300px;           /* Membulatkan semua gambar, makin besar nilai makin bulat */
+  border-radius: 150px;            /* Membuat semua gambar punya sudut membulat (80px). 
+                                     Semakin besar angkanya, semakin bulat hasilnya. */
 }
