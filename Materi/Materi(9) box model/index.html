@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Box Model & Position </title>
+    <!-- add pico css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- add style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- bungkus dengan class container agar ada space di kiri-kanan -->
+    <div class="container">
+        <h1>CSS3: Box Model & Position</h1>
+        <hr>
+        <!-- buat kolom otomatis dengan class grid -->
+        <div class="grid">
+            
+            <div class="card">Box A</div>
+            <div class="card">Box B</div>
+            <div class="card">Box C</div>
+            <div class="card">Box D</div>
+        </div>
+        <div id="box-d">
+            <p>Box-c</p>
+        </div>
+    </div>
+    <h2>Bagian 2: Position</h2>
+    <div class="grid">
+        <div id="box-e">
+            <p>Box E</p>
+            <p>(STATIC)</p>
+        </div>
+        <div id="box-g">
+            <p>Box G</p>
+            <p>(STATIC)</p>
+        </div>
+        <div class="card">Box F</div>
+        <div class="card">Box G</div>
+        <div class="card">Box H</div>
+    </div>
+</body>
+</html>

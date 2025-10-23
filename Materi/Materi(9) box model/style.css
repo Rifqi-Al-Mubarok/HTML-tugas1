@@ -1,0 +1,38 @@
+.card{
+    background: rgb(217, 255, 0);
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    line-height: 12;
+    border: 2px dashed rgb(87, 69, 69);
+    border-radius: 6px;
+    border-radius: 6px;
+
+}
+#box-c {
+    width: 200px;
+    height: 200px;
+    background: aquamarine;
+    border: 5px solid #333;
+    margin: 20px;
+}
+
+#box-e {
+    width: 200px;
+    height: 200px;
+    background: rgb(251, 4, 119);
+    position: relative;
+    top: 10px;
+    left: 20px;
+    /* right: 10px; */
+
+}
+
+#box-g {
+    
+    width: 200px;
+    height: 200px;
+    background: rgb(251, 4, 119);
+    position: relative;
+    bottom: 10px;
+}
